@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kabin_todo/screens/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +11,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+    return const MaterialApp(
+      title: 'Kabin ToDo',
+      debugShowCheckedModeBanner: false,
+      home: Home(),
     );
   }
 }
